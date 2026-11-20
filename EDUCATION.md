@@ -40,9 +40,18 @@ npm test
 | Field | Rule |
 | --- | --- |
 | subject | `a-z` / `1-5` / `.`, length 1..12, no leading/trailing/doubled `.` |
-| score | integer 0 .. 100 inclusive |
+| score | integer **0 .. 100** inclusive |
 
 The name regex is looser than [px-invariant-kit](https://github.com/pixel-journey/px-invariant-kit) (dots allowed mid-name). Do not merge without a test.
+
+### Attack → test
+
+| Attack | Lab behavior |
+| --- | --- |
+| Score 101 | refused |
+| Float 1.5 | refused |
+| Capitalized `Alice` | not an account |
+| Claim signed on-chain | no signature field |
 
 ---
 
@@ -57,9 +66,9 @@ The name regex is looser than [px-invariant-kit](https://github.com/pixel-journe
 
 ### Exercises
 
-1. Is score 0 valid? (Yes.)  
-2. Is `Alice` valid? (No.)  
-3. Does this return a signature field? (No.)
+1. Is score 0 valid? (**Yes**.)  
+2. Is `Alice` valid? (**No**.)  
+3. Does this return a signature field? (**No**.)
 
 ---
 
