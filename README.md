@@ -1,7 +1,7 @@
 # A score of 0 to 100
 
 **Trust label:** `educational-reference`  
-**Catalog:** [wax-ecosystem-blueprint-catalog](https://github.com/pixel-journey/wax-ecosystem-blueprint-catalog)
+**Catalog:** `wax-ecosystem-blueprint-catalog` (private index; not this public course)
 
 alice has a score of 42. Over 100 is refused. The object is not signed.
 
